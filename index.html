@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Henny Penny', sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        /* Navbar Styles */
+        .crazy-navbar {
+            background-color: #222;
+            padding: 10px 0;
+        }
+        .crazy-navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        .crazy-navbar ul li {
+            margin: 0 15px;
+        }
+        .crazy-navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .crazy-navbar ul li a:hover {
+            color: #f00;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .crazy-title {
+            font-size: 4rem;
+            color: #ff9900;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.7);
+        }
+        .text-shadow {
+            font-size: 2rem;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 50px 20px;
+            background-color: #333;
+            text-align: center;
+        }
+        .copy-section {
+            margin-top: 20px;
+        }
+        .copy-section p {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .copy-section button {
+            padding: 10px 20px;
+            background-color: #ff9900;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .copy-section button:hover {
+            background-color: #cc7a00;
+        }
+
+        /* Tokenomics Section */
+        .tokenomics {
+            padding: 50px 20px;
+            background-color: #444;
+            text-align: center;
+        }
+
+        /* Roadmap Section */
+        .roadmap {
+            padding: 50px 20px;
+            background-color: #555;
+            text-align: center;
+        }
+        .roadmap-item {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        /* Meme Gallery Section */
+        .meme-gallery {
+            padding: 50px 20px;
+            background-color: #222;
+            text-align: center;
+        }
+        .meme-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .meme img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Social Section */
+        .social-section {
+            padding: 50px 20px;
+            background-color: #333;
+            text-align: center;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons a img {
+            width: 50px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px 0;
+            background-color: #222;
+            text-align: center;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .crazy-title {
+                font-size: 3rem;
+            }
+            .text-shadow {
+                font-size: 1.5rem;
+            }
+            .roadmap-item {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="crazy-navbar">
+    <ul>
+        <li><a href="#home"> Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#meme-gallery">Meme Gallery</a></li>
+        <li><a href="#social">Social</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section" id="home">
+    <h1 class="crazy-title">Meme Web Nyeleneh</h1>
+    <h2 class="text-shadow">We're Crazy, We're Fun!</h2>
+</section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+    <h2>About Us</h2>
+    <p>We're here to bring the fun with crazy memes and wild designs.</p>
+    <div class="copy-section">
+        <p id="copy-text">caxxxxxxxxxxxxxxxxxxxxxxx</p>
+        <button onclick="copyText()">Copy Text</button>
+    </div>
+</section>
+
+<!-- Tokenomics Section -->
+<section class="tokenomics" id="tokenomics">
+    <h2>Our Tokenomics</h2>
+    <p>Token Name = $JUCE</p>
+    <p>TICKER = $JUCE</p>
+    <p>TOTAL SUPPLY = 1,000,000,000</p>
+    <p>LIQUIDITY POOL BURNED = 100%</p>
+    <p>TAXES = 0%</p>
+</section>
+
+<!-- Roadmap Section -->
+<section class="roadmap" id="roadmap">
+    <h2>Our Roadmap</h2>
+    <div class="roadmap-item">1. Meme Launch 🚀</div>
+    <div class="roadmap-item">2. Token Distribution 📈</div>
+    <div class="roadmap-item">3. Meme Revolution 🔥</div>
+    <div class="roadmap-item">4. Global Meme Domination 🌍</div>
+</section>
+
+<!-- Meme Gallery Section -->
+<section class="meme-gallery" id="meme-gallery">
+    <h2>Our Memes</h2>
+    <div class="meme-grid">
+        <div class="meme"><img src="https://i.pinimg.com/originals/1a/81/1d/1a811de524c887b7f03ebc3d7ae94219.gif" alt="Meme 1"></div>
+        <div class="meme"><img src="https://i.pinimg.com/originals/1a/81/1d/1a811de524c887b7f03ebc3d7ae94219.gif" alt="Meme 2"></div>
+        <div class="meme"><img src="https://i.pinimg.com/originals/1a/81/1d/1a811de524c887b7f03ebc3d7ae94219.gif" alt="Meme 3"></div>
+        <div class="meme"><img src="https://i.pinimg.com/originals/1a/81/1d/1a811de524c887b7f03ebc3d7ae94219.gif" alt="Meme 4"></div>
+    </div>
+</section>
+
+<!-- Social Section -->
+<section class="social-section" id="social">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+        <a href="#"><img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png" width="70px"></a>
+        <a href="#"><img src="https://logodownload.org/wp-content/uploads/2017/11/telegram-logo-8.png" width="70px"></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/021/819/342/non_2x/fun-green-pill-free-png.png" width="70px"></a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Meme Web Nyeleneh. All rights reserved.</p>
+</footer>
+
+<script>
+    function copyText() {
+        const text = document.getElementById('copy-text').innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert('Text copied to clipboard!');
+        });
+    }
+</script>
+
+</body>
+</html>
